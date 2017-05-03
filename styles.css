@@ -628,3 +628,42 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
   background: #1b1d23;
   color: #ccc;
 }
+
+.user-profile-nav {
+    background-color: #24292e;
+    border-color: #181a1f;
+}
+.user-profile-sticky-bar::after{
+    background-color: #24292e;
+    border-color: #181a1f;
+}
+.underline-nav-item.selected{
+  color: #ccc;
+}
+.underline-nav-item:hover, .underline-nav-item:focus{
+  color: #ccc;
+}
+
+.repository-lang-stats ol.repository-lang-stats-numbers li .lang{
+  font-size: 11px;
+}
+.repository-lang-stats ol.repository-lang-stats-numbers li span.percent {
+  font-size: 11px;
+}
+
+.border-gray-dark {
+    border-color: #181a1f !important;
+}
+.border-bottom {
+  border-color: #181a1f !important;
+}
+
+.bg-white {
+    background-color: #24292e !important;
+}
+.profile-timeline.discussion-timeline .profile-timeline-month-heading::after{
+  background-color: #181a1f;
+}
+.profile-rollup-wrapper+.profile-rollup-wrapper {
+  border-color: #181a1f !important;
+}
