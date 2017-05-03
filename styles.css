@@ -659,11 +659,29 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 }
 
 .bg-white {
-    background-color: #24292e !important;
+  background-color: #24292e !important;
 }
 .profile-timeline.discussion-timeline .profile-timeline-month-heading::after{
   background-color: #181a1f;
 }
 .profile-rollup-wrapper+.profile-rollup-wrapper {
   border-color: #181a1f !important;
+}
+
+.octotree_github_sidebar .octotree_views {
+  background-color: #24292e !important;
+  border-color: #181a1f !important;
+}
+.octotree_github_sidebar .octotree_views .octotree_view .octotree_view_header {
+  background-color: #2c313a !important;
+  border-color: #181a1f !important;
+}
+.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-anchor {
+  color: #9da5b4 !important;
+}
+.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-default .jstree-wholerow-hovered{
+    background-color: #2f333c !important;
+}
+.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-default .jstree-wholerow-clicked {
+    background-color: #3c414a !important;
 }
