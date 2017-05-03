@@ -115,6 +115,9 @@ a{
 .text-gray-dark {
     color: #9da5b4!important;
 }
+.text-gray{
+    color: #9da5b4!important;
+}
 
 .text-emphasized{
   color: #ccc;
@@ -242,6 +245,10 @@ table.files td.icon{
   color: rgba(255,255,255,0.75);
 }
 
+.btn-outline:disabled, .btn-outline.disabled {
+  background-color: #2c313a!important;
+}
+
 .ajax-pagination-form .ajax-pagination-btn{
   color: rgba(255,255,255,0.75);
   background-image: linear-gradient(-180deg, #535659 0%, #424549 90%);
@@ -308,6 +315,9 @@ table.files td.icon{
 }
 
 .commit-group-title .octicon-git-commit{
+  background: #24292e;
+}
+.commit-icon .octicon{
   background: #24292e;
 }
 
@@ -386,13 +396,29 @@ table.files td.icon{
   color: #98c379;
 }
 
+.pl-smi, .pl-s .pl-s1 {
+    color: #c55;
+}
+
 .tabnav-tab.selected{
   background:  #3c414a;
   color: #eee;
   border-color: #181a1f;
 }
-
 .tabnav-tab:hover, .tabnav-tab:focus{
+  color: #eee;
+}
+.tabnav-pr .tabnav-tab.selected{
+  color: #eee;
+  border-color: #181a1f;
+}
+.tabnav-pr .tabnav-tab{
+  color: #586069;
+}
+.Counter{
+  background-color: #181a1f;
+}
+.tabnav-pr .tabnav-tab.selected .Counter{
   color: #eee;
 }
 
@@ -456,6 +482,9 @@ table.files td.icon{
 }
 
 .blob-code-hunk, .blob-code-expandable{
+    background-color: #1b1d23;
+}
+.timeline-commits .hidden-text-expander .ellipsis-expander{
     background-color: #1b1d23;
 }
 
@@ -526,7 +555,7 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 }
 
 .timeline-comment{
-  background-color: #24292e;
+  background-color: #333842;
   border-color: #181a1f;
 }
 
@@ -546,6 +575,10 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 
 .topic-tag{
   background-color: #1b1d23;
+}
+.commit-ref{
+  background-color: #1b1d23;
+  color: rgba(255,255,255,0.75);
 }
 
 .readme .markdown-body, .readme .plain{
@@ -684,4 +717,136 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 }
 .octotree_github_sidebar .octotree_views .octotree_treeview .jstree-default .jstree-wholerow-clicked {
     background-color: #3c414a !important;
+}
+
+
+.review-thread-reply{
+  background-color: transparent;
+  border-color: #181a1f !important;
+}
+.review-thread:not(:last-child),
+.review-thread:last-child {
+  border-color: #181a1f !important;
+}
+.last-review-thread{
+  border-color: #181a1f !important;
+}
+.diff-table tr:last-child .line-comments,
+.diff-table tr:not(:last-child) .line-comments{
+  border-color: #181a1f !important;
+}
+.diffbar{
+  background-color: #1b1d23;
+}
+.pr-toolbar{
+  background-color: #1b1d23;
+}
+.diffstat{
+  color: #A7A7A7;
+}
+
+.gh-header-meta{
+  color: #8d95a4;  
+}
+.gh-header-meta .author{
+  color: #9da5b4;
+}
+
+.discussion-sidebar-item+.discussion-sidebar-item{
+  border-color: #181a1f !important;
+}
+
+.sidebar-assignee .assignee{
+  color: #9da5b4;
+}
+
+.discussion-sidebar-heading{
+  color: #9da5b4;
+}
+
+.timeline-comment-header{
+  background-color: #181a1f;
+  color: #9da5b4;
+  border-color: #181a1f !important;
+}
+
+.timeline-commits .commit-message>code a{
+  color: #9da5b4;
+}
+.discussion-item+.discussion-item, .discussion-item-review+.discussion-item{
+  border-color: #181a1f !important;
+}
+
+.timeline-comment-wrapper>.timeline-comment::before, .timeline-new-comment .timeline-comment::before{
+  border-right-color: #1b1d23!important;
+}
+.timeline-comment-wrapper>.timeline-comment::after, .timeline-new-comment .timeline-comment::after{
+  border-right-color: #1b1d23!important;
+}
+.discussion-item-review .file-header{
+  background-color: #181a1f;
+  border-color: #181a1f !important;
+}
+
+.simple-box{
+  background-color: #333842;
+  border-color: #181a1f;
+}
+.review-summary::after{
+    border-bottom-color: #333842;
+}
+.review-summary::before{
+    border-bottom-color: #1b1d23;
+}
+
+.discussion-timeline-actions{
+  background-color: #24292e;
+  border-color: #181a1f;
+}
+.discussion-item-review .blob-wrapper{
+  border-color: #181a1f;
+}
+
+.branch-action-body{
+  background-color: #24292e;
+  border-color: #181a1f;
+}
+
+.branch-action-body .merge-message, .branch-action-body .merge-branch-form{
+  background-color: #24292e;
+  border-color: #181a1f;
+}
+.branch-action-item+.branch-action-item, .branch-action-item+.mergeability-details{
+  border-color: #181a1f;
+}
+.merge-status-list{
+  border-color: #181a1f;
+}
+
+.branch-action-body::after{
+  border-right-color: transparent;
+}
+
+.markdown-body table tr{
+  background-color: #222;
+  border-color: #181a1f;
+}
+.markdown-body table tr:nth-child(2n){
+  background-color: #090705;
+  border-color: #181a1f;
+}
+.markdown-body table th, .markdown-body table td{
+  border-color: #181a1f;
+}
+.markdown-body hr{
+  background-color: #181a1f;
+}
+.markdown-body blockquote{
+  border-color: #181a1f;
+}
+.Box-row{
+  border-color: #181a1f;
+}
+.Box-row--focus-gray.navigation-focus{
+  background-color: #090705;
 }
