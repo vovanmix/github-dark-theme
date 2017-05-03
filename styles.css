@@ -558,6 +558,10 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
   background-color: #333842;
   border-color: #181a1f;
 }
+.timeline-comment.current-user{
+  background-color: #333842;
+  border-color: #181a1f;
+}
 
 .thread-subscription-status{
   background-color: #24292e;
@@ -571,6 +575,8 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 
 .timeline-comment-wrapper{
   border-color: #181a1f;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .topic-tag{
@@ -769,9 +775,18 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
   color: #9da5b4;
   border-color: #181a1f !important;
 }
+.timeline-comment.current-user .timeline-comment-header{
+  background-color: #181a1f;
+  color: #9da5b4;
+  border-color: #181a1f !important;
+}
 
 .timeline-commits .commit-message>code a{
   color: #9da5b4;
+}
+.timeline-commits .commit-message>code a:hover{
+  color: #9da5b4;
+  text-decoration: underline;
 }
 .discussion-item+.discussion-item, .discussion-item-review+.discussion-item{
   border-color: #181a1f !important;
@@ -853,4 +868,24 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 
 .markdown-body h2{
   border-color: #181a1f;
+}
+
+.review-thread-reply .inline-comment-form{
+    background-color: #333842;
+    border-color: #181a1f;
+}
+
+.form-control::-webkit-input-placeholder, 
+.form-select::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+code,
+.markdown-body code, .markdown-body tt {
+  background-color: #181a1f;
+  color: #af6161;
+}
+
+.discussion-item+.discussion-item-review{
+    border-color: #181a1f;
 }
