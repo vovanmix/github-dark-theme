@@ -897,3 +897,7 @@ code,
 .discussion-item-entity{
   color: #61afef;
 }
+
+.markdown-body img{
+  background-color: #282c34;
+}
