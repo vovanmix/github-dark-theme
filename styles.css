@@ -97,7 +97,15 @@ hr, .rule{
 }
 
 a{
-  color: rgba(255,255,255,0.85)
+  color: rgba(255,255,255,0.85);
+}
+
+.link-gray-dark{
+  color: rgba(255,255,255,0.85) !important;
+}
+.link-gray-dark:hover{
+  color: rgba(255,255,255,0.85) !important;
+  text-decoration: underline;
 }
 
 .text-gray-dark {
@@ -408,6 +416,25 @@ table.files td.icon{
     border: 1px solid #181a1f;
 }
 
+.full-commit p.commit-title{
+  color: #eee;
+}
+
+.full-commit{
+  color: #d7dae0;
+  background-color: #2c313a;
+  border: 1px solid #181a1f;
+}
+
+.full-commit .sha-block>.sha{
+  color: #eee;
+}
+
+.full-commit .commit-meta{
+    background-color: #31363f;
+    border: 1px solid #181a1f;
+}
+
 .copyable-terminal{
     background-color: #1b1d23;
 }
@@ -416,7 +443,29 @@ table.files td.icon{
   color: #DBD6D1;
 }
 
-
 .cm-s-github .cm-string{
   color: #98c379
+}
+
+.blob-num-hunk, .blob-num-expandable{
+    background-color: #1b1d23;
+}
+
+.blob-code-hunk, .blob-code-expandable{
+    background-color: #1b1d23;
+}
+
+.blob-expanded .blob-num, .blob-expanded .blob-code{
+  background-color: #3a3f46;
+}
+
+.file-diff-split .empty-cell{
+  background-color: #3a3f46;
+}
+
+tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-expanded .blob-code {
+    border-top: 1px solid #181a1f;
+}
+.blob-expanded+tr:not(.blob-expanded) .blob-num, .blob-expanded+tr:not(.blob-expanded) .blob-code {
+    border-top: 1px solid #181a1f;
 }
