@@ -165,7 +165,7 @@ table.files td.icon .octicon-file-directory{
 }
 
 table.files td.icon{
-  color: #9da5b4;  
+  color: #9da5b4;
 }
 
 .table-list{
@@ -298,7 +298,7 @@ table.files td.icon{
   color: rgba(255,255,255,0.75);
 }
 .btn-octicon:hover{
-  color: #fff;  
+  color: #fff;
 }
 .btn-octicon-danger:hover {
     color: #cb2431;
@@ -752,7 +752,7 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 }
 
 .gh-header-meta{
-  color: #8d95a4;  
+  color: #8d95a4;
 }
 .gh-header-meta .author{
   color: #9da5b4;
@@ -875,7 +875,7 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
     border-color: #181a1f;
 }
 
-.form-control::-webkit-input-placeholder, 
+.form-control::-webkit-input-placeholder,
 .form-select::-webkit-input-placeholder {
   color: #aaa;
 }
@@ -904,4 +904,26 @@ code,
 
 .private .mini-repo-list-item {
   background-color: #464542;
+}
+
+.code-list .file-box{
+  border-color: #181a1f;
+}
+.border{
+  border-color: #181a1f!important;
+}
+
+.code-list .code-list-item+.code-list-item{
+  border-color: #181a1f;
+}
+
+.pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus, .pagination em:hover, .pagination em:focus{
+  border-color: #181a1f;
+  color: rgba(255,255,255,0.75);
+  background-image: linear-gradient(-180deg, #535659 0%, #424549 90%);
+}
+
+.code-list .divider .blob-num, .code-list .divider .blob-code {
+  background-color: #2c313a;
+  border-color: #181a1f;
 }
