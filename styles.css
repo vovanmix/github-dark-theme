@@ -901,3 +901,7 @@ code,
 .markdown-body img{
   background-color: #282c34;
 }
+
+.private .mini-repo-list-item {
+  background-color: #464542;
+}
