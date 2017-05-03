@@ -370,6 +370,10 @@ table.files td.icon{
     color: #d19a66;
 }
 
+.pl-s, .pl-pds, .pl-s .pl-pse .pl-s1, .pl-sr, .pl-sr .pl-cce, .pl-sr .pl-sre, .pl-sr .pl-sra{
+  color: #98c379;
+}
+
 .tabnav-tab.selected{
   background:  #3c414a;
   color: #eee;
@@ -406,4 +410,13 @@ table.files td.icon{
 
 .copyable-terminal{
     background-color: #1b1d23;
+}
+
+.commit-author-section{
+  color: #DBD6D1;
+}
+
+
+.cm-s-github .cm-string{
+  color: #98c379
 }
