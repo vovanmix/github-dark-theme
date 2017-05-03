@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Github dark theme",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ],
+      "css": ["styles.css"]
+    }
+  ]
+}
