@@ -887,5 +887,13 @@ code,
 }
 
 .discussion-item+.discussion-item-review{
-    border-color: #181a1f;
+  border-color: #181a1f;
+}
+
+.new-discussion-timeline .closed-banner{
+  border-color: #24292e;
+}
+
+.discussion-item-entity{
+  color: #61afef;
 }
