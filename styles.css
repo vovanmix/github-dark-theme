@@ -469,3 +469,64 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 .blob-expanded+tr:not(.blob-expanded) .blob-num, .blob-expanded+tr:not(.blob-expanded) .blob-code {
     border-top: 1px solid #181a1f;
 }
+
+.blob-code-addition {
+    background-color: #103605;
+}
+.blob-num-addition {
+    background-color: #103605;
+    border-color: #181a1f;
+}
+
+.blob-code-deletion {
+    background-color: #540B07;
+}
+.blob-num-deletion {
+    background-color: #540B07;
+    border-color: #181a1f;
+}
+
+.file-diff-split .blob-code+.blob-num {
+    border-left: 1px solid #181a1f;
+}
+
+.bottom-collapse {
+    background-color: #1b1d23;
+    border-top: 1px solid #181a1f;
+}
+
+.drag-and-drop{
+  background-color: #1b1d23;
+  border-color: #181a1f;
+}
+
+.new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav{
+  background: #24292e;
+}
+
+.tabnav{
+  border-bottom: 1px solid #181a1f;
+}
+
+.upload-enabled textarea{
+  border-color: #181a1f;
+}
+
+.timeline-comment{
+  background-color: #24292e;
+  border-color: #181a1f;
+}
+
+.thread-subscription-status{
+  background-color: #24292e;
+  border-color: #181a1f;
+}
+
+.commit-sha{
+  background-color: #1b1d23;
+  border: 1px solid #181a1f;
+}
+
+.timeline-comment-wrapper{
+  border-color: #181a1f;
+}
