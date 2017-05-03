@@ -850,3 +850,7 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
 .Box-row--focus-gray.navigation-focus{
   background-color: #090705;
 }
+
+.markdown-body h2{
+  border-color: #181a1f;
+}
