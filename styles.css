@@ -490,6 +490,15 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-ex
     border-color: #181a1f;
 }
 
+.blob-code-addition .x {
+    color: #ccc;
+    background-color: #23691b;
+}
+.blob-code-deletion .x {
+    color: #ccc;
+    background-color: #9a0a00;
+}
+
 .file-diff-split .blob-code+.blob-num {
     border-left: 1px solid #181a1f;
 }
