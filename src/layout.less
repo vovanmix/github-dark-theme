@@ -246,8 +246,8 @@ body {
   .subnav-item.selected,
   .subnav-item.selected:focus,
   .subnav-item.selected:hover {
-    background-color: #4d78cc!important;
-    border-color: #4d78cc!important;
+    background-color: @button-active-color!important;
+    border-color: @button-active-color!important;
   }
 
   .input-contrast {
@@ -338,7 +338,7 @@ body {
     color: @bright-text-color!important;
   }
 
-  .tabnav-pr {
+  .tabnav-pr, div {
     .tabnav-tab {
       color: @faded-link-color!important;
 
@@ -423,9 +423,10 @@ body {
     border-color: @border-color!important;
   }
 
+  .code-list-item-private .blob-num,
   .code-list .divider .blob-code,
   .code-list .divider .blob-num {
-    background-color: @dropdown-bg!important;
+    background-color: @code-bg!important;
     border-color: @border-color!important;
   }
 
@@ -443,6 +444,10 @@ body {
   .orghead{
     background: @head-bg!important;
     border-color: @border-color!important;
+
+    .org-name{
+      color: @link-color;
+    }
 
     .pagehead-tabs-item {
       &.selected {

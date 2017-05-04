@@ -2,44 +2,57 @@
 
 .readme .markdown-body, .readme .plain {
   background: @code-bg!important;
-  border: 1px solid #181a1f!important;
+  border: 1px solid @border-color!important;
 }
 
-.markdown-body .highlight pre, .markdown-body pre {
-  background-color: #1b1d23!important;
-}
-
-.markdown-body img {
-  background-color: @code-bg!important;
-}
-
-code, .markdown-body code, .markdown-body tt {
-  background-color: #181a1f!important;
+code {
+  background-color: @border-color!important;
   color: #af6161!important;
 }
 
-.markdown-body h2 {
-  border-color: #181a1f!important;
-}
+.markdown-body {
+  h1{
+    border-color: @light-border-color!important;
+  }
 
-.markdown-body table tr {
-  background-color: #222!important;
-  border-color: #181a1f!important;
-}
+  h2 {
+    border-color: @border-color!important;
+  }
 
-.markdown-body table tr:nth-child(2n) {
-  background-color: #090705!important;
-  border-color: #181a1f!important;
-}
+  hr {
+    background-color: @border-color!important;
+  }
 
-.markdown-body table th, .markdown-body table td {
-  border-color: #181a1f!important;
-}
+  blockquote {
+    border-color: @border-color!important;
+  }
 
-.markdown-body hr {
-  background-color: #181a1f!important;
-}
+  img {
+    background-color: @code-bg!important;
+  }
 
-.markdown-body blockquote {
-  border-color: #181a1f!important;
+  code, tt {
+    background-color: @border-color!important;
+    color: #af6161!important;
+  }
+
+  .highlight pre, pre {
+    background-color: @tag-bg-color!important;
+  }
+
+  table{
+    tr {
+      background-color: #222!important;
+      border-color: @border-color!important;
+
+      &:nth-child(2n) {
+        background-color: #090705!important;
+        border-color: @border-color!important;
+      }
+    }
+
+    th, td {
+      border-color: @border-color!important;
+    }
+  }
 }

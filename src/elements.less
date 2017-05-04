@@ -18,15 +18,32 @@ body {
     background-color: @bg-color!important;
   }
 
-  .pagination a:focus,
-  .pagination a:hover,
-  .pagination em:focus,
-  .pagination em:hover,
-  .pagination span:focus,
-  .pagination span:hover {
-    border-color: @border-color!important;
-    color: @link-color!important;
-    background-image: @button-bg-image!important;
+  .pagination {
+    a,
+    em:focus,
+    em:hover,
+    span:focus,
+    span:hover {
+      border-color: @border-color!important;
+      color: @link-color!important;
+      background-image: @button-bg-image!important;
+    }
+
+    a:focus,
+    a:hover{
+      background-image: @button-bg-image-hover!important;
+    }
+
+    .gap, .disabled, .gap:hover, .disabled:hover{
+      background-color: @dropdown-bg!important;
+      background-image: none!important;
+      border-color: @border-color!important;
+    }
+
+    .current, .current:hover{
+      background-color: @button-active-color!important;
+      background-image: none;
+    }
   }
 
   .ajax-pagination-form .ajax-pagination-btn {
@@ -159,13 +176,10 @@ body {
     }
   }
 
-  .cc-ext .pagehead-actions .cc-classic-cta a{
-    &:hover, &:active {
-      border-color: @border-color;
-    }
-  }
-
   .text-shadow-light{
     text-shadow: none;
   }
+}
+.cc-ext .pagehead-actions .cc-classic-cta a {
+  border-color: @border-color!important;
 }
