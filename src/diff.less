@@ -1,0 +1,73 @@
+/* # Diff */
+
+.blob-expanded .blob-num, .blob-expanded .blob-code {
+  background-color: #3a3f46!important;
+}
+
+.file-diff-split .empty-cell {
+  background-color: #3a3f46!important;
+}
+
+tr:not(.blob-expanded)+.blob-expanded .blob-num, tr:not(.blob-expanded)+.blob-expanded .blob-code {
+  border-top: 1px solid @border-color!important;
+}
+
+.blob-expanded+tr:not(.blob-expanded) .blob-num, .blob-expanded+tr:not(.blob-expanded) .blob-code {
+  border-top: 1px solid @border-color!important;
+}
+
+.blob-code-inner {
+  color: #abb2bf!important;
+  font-family: 'firacode-retina', 'Menlo'!important;
+  font-size: 14px!important;
+}
+
+.compare-pr-placeholder {
+  background-color: #2c313a!important;
+  border: 1px solid @border-color!important;
+}
+
+.blob-num {
+  color: #636d83!important;
+}
+
+.blob-wrapper {
+  background: #282c34!important;
+}
+
+.blob-code-addition {
+  background-color: @diff-addition!important;
+
+  .x {
+    color: @diff-accent-font-color!important;
+    background-color: @diff-addition-accent!important;
+  }
+}
+
+.blob-num-addition {
+  background-color: @diff-addition!important;
+  border-color: @border-color!important;
+}
+
+.blob-code-deletion {
+  background-color: @diff-deletion!important;
+
+  .x {
+    color: @diff-accent-font-color!important;
+    background-color: @diff-deletion-accent!important;
+  }
+}
+
+.blob-num-deletion {
+  background-color: @diff-deletion!important;
+  border-color: @border-color!important;
+}
+
+.file-diff-split .blob-code+.blob-num {
+  border-left: 1px solid @border-color!important;
+}
+
+.bottom-collapse {
+  background-color: @border-color!important;
+  border-top: 1px solid @border-color!important;
+}

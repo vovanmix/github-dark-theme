@@ -4,5 +4,5 @@ This package will change appearance of all Github pages to dark theme, mostly ba
 Also changed font for code to support ligatures (requires https://github.com/tonsky/FiraCode installed locally).
 
 ```
-rm ./github.zip && cd src && zip -r ../github.zip ./ && cd ../
+
 ```

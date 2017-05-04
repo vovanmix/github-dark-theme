@@ -1,0 +1,20 @@
+{
+  "name": "github-dark-theme",
+  "version": "0.1",
+  "repository": "git@github.com:vovanmix/github-dark-theme.git",
+  "author": "Vladimir Mikhaylovskiy <vlad@indiegogo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "assemble": "webpack",
+    "build": "webpack && rm ./github.zip && cd dist && zip -r ../github.zip ./ && cd ../"
+  }
+}
