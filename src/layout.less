@@ -8,28 +8,28 @@ body {
 
     &.selected {
       background-color: @bg-color!important;
-      border-color: #e36209 @border-color transparent!important;
+      border-color: @highlight-border-color @border-color transparent!important;
       color: @link-color!important;
     }
 
     .octicon {
-      color: #586069!important;
+      color: @faded-link-color!important;
     }
   }
 
   .pagehead,
   .repohead.experiment-repo-nav {
-    background: #21252b!important;
+    background: @head-bg!important;
     border-color: @border-color!important;
   }
 
   .site-header {
-    background: #21252b!important;
+    background: @head-bg!important;
     border-color: @border-color!important;
   }
 
   .showcase-page-pattern::after {
-    background: #21252b!important;
+    background: @head-bg!important;
     border-color: @border-color!important;
   }
 
@@ -54,7 +54,7 @@ body {
 
   .flash {
     background-color: @tag-bg-color!important;
-    color: #eee!important;
+    color: @link-color!important;
   }
 
   .blankslate {
@@ -77,7 +77,7 @@ body {
 
   .menu-item.selected {
     background-color: @bg-color!important;
-    color: #eee!important;
+    color: @link-color!important;
   }
 
   .boxed-group .heading,
@@ -87,7 +87,7 @@ body {
   }
 
   .boxed-group-inner {
-    background-color: #282c34!important;
+    background-color: @dropdown-bg!important;
     border-color: @border-color!important;
   }
 
@@ -135,7 +135,7 @@ body {
   }
 
   .access-form-wrapper {
-    background-color: #282c34!important;
+    background-color: @dropdown-bg!important;
     border-color: @border-color!important;
   }
 
@@ -153,7 +153,7 @@ body {
   }
 
   table.files {
-    background: #333842!important;
+    background: @comment-bg!important;
   }
 
   table.files td {
@@ -240,7 +240,7 @@ body {
 
   .subnav-item:focus,
   .subnav-item:hover {
-    background-color: #34393e!important;
+    background-color: @comment-bg!important;
   }
 
   .subnav-item.selected,
@@ -269,16 +269,16 @@ body {
   }
 
   .btn-octicon-danger:hover {
-    color: #cb2431!important;
+    color: @text-dabger-color!important;
   }
 
   .filter-bar {
-    background: #282c34!important;
+    background: @dropdown-bg!important;
     border-bottom: 1px solid @border-color!important;
   }
 
   .more-repos {
-    background: #282c34!important;
+    background: @dropdown-bg!important;
     box-shadow: inset 0 1px 0 @border-color!important;
   }
 
@@ -310,7 +310,7 @@ body {
   }
 
   .commits-list-item.navigation-focus {
-    background: #34393e!important;
+    background: @comment-bg!important;
   }
 
   .commit-group-title {
@@ -318,17 +318,19 @@ body {
   }
 
   .commit-tease-contributors {
-    background-color: #333842!important;
+    background-color: @comment-bg!important;
     border-top: 1px solid @border-color!important;
   }
 
   .commit-tease-sha {
-    color: #e7eaf0!important;
+    color: @link-color!important;
   }
 
-  .reponav-item:focus,
-  .reponav-item:hover {
-    color: @link-color!important;
+  .reponav-item {
+    &:focus,
+    &:hover {
+      color: @link-color!important;
+    }
   }
 
   .team-mention,
@@ -336,32 +338,29 @@ body {
     color: @bright-text-color!important;
   }
 
-  .tabnav-tab.selected {
-    background: #3c414a!important;
-    color: #eee!important;
-    border-color: @border-color!important;
-  }
+  .tabnav-pr {
+    .tabnav-tab {
+      color: @faded-link-color!important;
 
-  .tabnav-tab:focus,
-  .tabnav-tab:hover {
-    color: #eee!important;
-  }
+      &.selected {
+        color: @link-color!important;
+        border-color: @border-color!important;
+        background: @comment-bg!important;
+      }
 
-  .tabnav-pr .tabnav-tab.selected {
-    color: #eee!important;
-    border-color: @border-color!important;
-  }
+      &:focus,
+      &:hover {
+        color: @link-color!important;
+      }
 
-  .tabnav-pr .tabnav-tab {
-    color: #586069!important;
+      .Counter {
+        color: @link-color!important;
+      }
+    }
   }
 
   .Counter {
     background-color: @border-color!important;
-  }
-
-  .tabnav-pr .tabnav-tab.selected .Counter {
-    color: #eee!important;
   }
 
   .Box-header--blue {
@@ -375,23 +374,23 @@ body {
     border-color: @border-color!important;
   }
 
-  .full-commit p.commit-title {
-    color: #eee!important;
-  }
-
   .full-commit {
     color: @link-color!important;
     background-color: @dropdown-bg!important;
     border-color: @border-color!important;
-  }
 
-  .full-commit .sha-block > .sha {
-    color: #eee!important;
-  }
+    p.commit-title {
+      color: @link-color!important;
+    }
 
-  .full-commit .commit-meta {
-    background-color: #31363f!important;
-    border-color: @border-color!important;
+    .sha-block > .sha {
+      color: @link-color!important;
+    }
+
+    .commit-meta {
+      background-color: #31363f!important;
+      border-color: @border-color!important;
+    }
   }
 
   .copyable-terminal {
@@ -399,7 +398,7 @@ body {
   }
 
   .commit-author-section {
-    color: #DBD6D1!important;
+    color: @link-color!important;
   }
 
   .blob-num-expandable,
@@ -435,8 +434,22 @@ body {
   }
   /* # Home page */
   .private .mini-repo-list-item {
-    background-color: #464542!important;
+    background-color: @private-bg!important;
   }
 
   /* # Settings page */
+
+  /* Orgs */
+  .orghead{
+    background: @head-bg!important;
+    border-color: @border-color!important;
+
+    .pagehead-tabs-item {
+      &.selected {
+        background-color: @bg-color!important;
+        border-color: @highlight-border-color @border-color transparent!important;
+        color: @link-color!important;
+      }
+    }
+  }
 }
