@@ -8,7 +8,7 @@
         "https://github.com/*",
         "https://gist.github.com/*"
       ],
-      "css": ["app/styles.css"]
+      "css": ["app/app.css"]
     }
   ]
 }
