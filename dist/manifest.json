@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Github Dark theme One Dark with ligatures",
-  "version": "0.2",
+  "version": "0.3",
   "content_scripts": [
     {
       "matches": [
