@@ -113,6 +113,7 @@ body .link-gray-dark:hover,
   text-decoration: underline!important;
 }
 
+body .text-gray-dark,
 .text-gray-dark {
   color: #9da5b4!important;
 }
