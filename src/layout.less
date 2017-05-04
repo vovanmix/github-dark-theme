@@ -3,14 +3,18 @@ body {
   background-color: @bg-color!important;
   color: @text-color!important;
 
-  .reponav-item.selected {
-    background-color: @bg-color!important;
-    border-color: #e36209 @border-color transparent!important;
-    color: #d7dae0!important;
-  }
+  .reponav-item{
+    color: @faded-link-color!important;
 
-  .reponav-item .octicon {
-    color: #586069!important;
+    &.selected {
+      background-color: @bg-color!important;
+      border-color: #e36209 @border-color transparent!important;
+      color: #d7dae0!important;
+    }
+
+    .octicon {
+      color: #586069!important;
+    }
   }
 
   .pagehead,
@@ -103,17 +107,17 @@ body {
   }
 
   a {
-    color: rgba(255, 255, 255, 0.85)!important;
+    color: @link-color!important;
   }
 
   .link-gray-dark,
   body .link-gray-dark {
-    color: rgba(255, 255, 255, 0.85)!important;
+    color: @link-color!important;
   }
 
   .link-gray-dark:hover,
   body .link-gray-dark:hover {
-    color: rgba(255, 255, 255, 0.85)!important;
+    color: @link-color!important;
     text-decoration: underline!important;
   }
 
@@ -198,7 +202,7 @@ body {
   }
 
   .breadcrumb {
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
   }
 
   .breadcrumb strong.final-path {
@@ -214,15 +218,15 @@ body {
   }
 
   .subnav-search-context .btn {
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
   }
 
   .btn-link {
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
   }
 
   .social-count {
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
     background-color: #424549!important;
   }
 
@@ -249,7 +253,7 @@ body {
   .input-contrast {
     background-color: #424549!important;
     border-color: @border-color!important;
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
   }
 
   .input-contrast:focus {
@@ -257,7 +261,7 @@ body {
   }
 
   .btn-octicon {
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
   }
 
   .btn-octicon:hover {
@@ -324,7 +328,7 @@ body {
 
   .reponav-item:focus,
   .reponav-item:hover {
-    color: rgba(255, 255, 255, 0.75)!important;
+    color: @link-color!important;
   }
 
   .team-mention,
