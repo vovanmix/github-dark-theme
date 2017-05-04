@@ -17,7 +17,17 @@ body {
 
 .pagehead, .repohead.experiment-repo-nav {
   background: #21252b!important;
-  border-bottom: 1px solid #181a1f!important;
+  border-color: #181a1f!important;
+}
+
+.site-header{
+  background: #21252b!important;
+  border-color: #181a1f!important;
+}
+
+.showcase-page-pattern::after{
+  background: #21252b!important;
+  border-color: #181a1f!important;
 }
 
 .form-group .form-control {
