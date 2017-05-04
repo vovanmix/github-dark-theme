@@ -6,3 +6,5 @@ Also changed font for code to support ligatures (requires https://github.com/ton
 ```
 yarn run build
 ```
+
+Use Codemirror styles from https://github.com/StylishThemes/GitHub-Dark/tree/master/themes/codemirror
