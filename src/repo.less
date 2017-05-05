@@ -18,20 +18,6 @@ body {
     color: @bright-text-color!important;
   }
 
-  .repository-lang-stats ol.repository-lang-stats-numbers li .lang {
-    color: @link-color!important;
-  }
-
-  .repository-lang-stats ol.repository-lang-stats-numbers li > a,
-  .repository-lang-stats ol.repository-lang-stats-numbers li > span {
-    color: @link-color!important;
-  }
-
-  .repository-lang-stats-graph {
-    border-color: @border-color!important;
-    border-top: 0!important;
-  }
-
   .branch-group-heading {
     color: @link-color!important;
     background-color: @dropdown-bg!important;
@@ -57,5 +43,30 @@ body {
 
   .RecentBranches{
     background-color: @tag-bg-color;
+  }
+
+  .repository-lang-stats {
+    ol.repository-lang-stats-numbers {
+      li{
+        .lang {
+          font-size: 11px!important;
+          color: @link-color!important;
+        }
+
+        span.percent {
+          font-size: 11px!important;
+        }
+
+        & > a,
+        & > span {
+          color: @link-color!important;
+        }
+      }
+    }
+  }
+
+  .repository-lang-stats-graph {
+    border-color: @border-color!important;
+    border-top: 0!important;
   }
 }
