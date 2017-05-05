@@ -133,6 +133,15 @@ body {
 
   .select-menu-item {
     border-color: @border-color!important;
+    background-color: @dropdown-bg!important;
+  }
+
+  .label-select-menu .select-menu-item.js-navigation-item.selected {
+    background: @tag-bg-color!important;
+  }
+
+  .select-menu-modal {
+    background: @dropdown-bg!important;
   }
 
   .select-menu-tabs {
@@ -153,14 +162,6 @@ body {
   .select-menu-tabs .select-menu-tab-nav:hover,
   .select-menu-tabs a:hover {
     color: @link-color-selected!important;
-  }
-
-  .select-menu-modal {
-    background: transparent!important;
-  }
-
-  .select-menu-item {
-    background-color: @tag-bg-color!important;
   }
 
   .dropdown-menu {
