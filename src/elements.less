@@ -134,6 +134,13 @@ body {
   .select-menu-item {
     border-color: @border-color!important;
     background-color: @dropdown-bg!important;
+
+    &.navigation-focus {
+      &.select-menu-action,
+      &.selected {
+        background-color: @border-color;
+      }
+    }
   }
 
   .label-select-menu .select-menu-item.js-navigation-item.selected {

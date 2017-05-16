@@ -1,17 +1,17 @@
 /* # Markdown */
-
-.readme .markdown-body, .readme .plain {
+.readme .markdown-body,
+.readme .plain {
   background: @code-bg!important;
   border: 1px solid @border-color!important;
 }
 
 code {
-  background-color: @border-color!important;
-  color: #af6161!important;
+  background-color: @tag-bg-color!important;
+  color: @code-snippet-color!important;
 }
 
 .markdown-body {
-  h1{
+  h1 {
     border-color: @light-border-color!important;
   }
 
@@ -31,16 +31,18 @@ code {
     background-color: @code-bg!important;
   }
 
-  code, tt {
-    background-color: @border-color!important;
-    color: #af6161!important;
+  code,
+  tt {
+    background-color: @tag-bg-color!important;
+    color: @code-snippet-color!important;
   }
 
-  .highlight pre, pre {
+  .highlight pre,
+  pre {
     background-color: @tag-bg-color!important;
   }
 
-  table{
+  table {
     tr {
       background-color: #222!important;
       border-color: @border-color!important;
@@ -51,7 +53,8 @@ code {
       }
     }
 
-    th, td {
+    td,
+    th {
       border-color: @border-color!important;
     }
   }

@@ -3,7 +3,7 @@ body {
   background-color: @bg-color!important;
   color: @text-color!important;
 
-  .reponav-item{
+  .reponav-item {
     color: @faded-link-color!important;
 
     &.selected {
@@ -33,7 +33,7 @@ body {
     border-color: @border-color!important;
   }
 
-  .form-group{
+  .form-group {
     .form-control {
       background-color: @tag-bg-color!important;
       border-color: @border-color!important;
@@ -270,6 +270,11 @@ body {
     border-top: 1px solid @border-color!important;
   }
 
+  .branch-infobar {
+    background-color: @tag-bg-color!important;
+    border-color: @border-color!important;
+  }
+
   .commit-tease {
     color: @link-color!important;
     background-color: @dropdown-bg!important;
@@ -314,7 +319,8 @@ body {
     color: @bright-text-color!important;
   }
 
-  .tabnav-pr, div {
+  .tabnav-pr,
+  div {
     .tabnav-tab {
       color: @faded-link-color!important;
 
@@ -399,9 +405,9 @@ body {
     border-color: @border-color!important;
   }
 
-  .code-list-item-private .blob-num,
   .code-list .divider .blob-code,
-  .code-list .divider .blob-num {
+  .code-list .divider .blob-num,
+  .code-list-item-private .blob-num {
     background-color: @code-bg!important;
     border-color: @border-color!important;
   }
@@ -413,15 +419,13 @@ body {
   .private .mini-repo-list-item {
     background-color: @private-bg!important;
   }
-
   /* # Settings page */
-
   /* Orgs */
-  .orghead{
+  .orghead {
     background: @head-bg!important;
     border-color: @border-color!important;
 
-    .org-name{
+    .org-name {
       color: @link-color;
     }
 
@@ -432,5 +436,9 @@ body {
         color: @link-color!important;
       }
     }
+  }
+
+  .email-format .email-hidden-toggle a {
+    background: @head-bg!important;
   }
 }
