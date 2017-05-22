@@ -136,9 +136,12 @@ body {
     background-color: @dropdown-bg!important;
 
     &.navigation-focus {
+      background-color: @border-color!important;
+
+      .description-inline,
       &.select-menu-action,
       &.selected {
-        background-color: @border-color;
+        background-color: @border-color!important;
       }
     }
   }
