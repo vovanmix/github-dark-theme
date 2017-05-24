@@ -73,3 +73,15 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num {
     color: @link-color!important;
   }
 }
+
+.file-diff-split td.blob-num.codecov:not(.codecov-on) {
+  &.codecov-missed {
+    background-color: @codecov-num-bg-color-missed!important;
+  }
+  &.codecov-hit {
+    background-color: @codecov-num-bg-color-hit!important;
+  }
+  &.codecov-partial {
+    background-color: @codecov-num-bg-color-partial!important;
+  }
+}
