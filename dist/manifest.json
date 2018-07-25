@@ -5,9 +5,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/*",
-        "https://gist.github.com/*",
-        "https://github.*.com/*"
+        "https://*.github.com/*"
       ],
       "css": ["app/app.css"]
     }
